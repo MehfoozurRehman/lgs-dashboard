@@ -11,6 +11,12 @@ import DeleteConfirmation from "./components/DeleteConfirmation";
 import Signup2nd from "./screens/Signup2nd";
 import OtpEmail from "./screens/OtpEmail";
 import SignupLast from "./screens/Signuplast";
+import NewsEvents from "./screens/NewsEvents";
+import LatestNews from "./screens/LatestNews";
+import ContactUs from "./screens/ContactUs";
+import AdmissionDates from "./screens/AdmissionDates";
+import AdmissionTestRequirements from "./screens/AdmissionTestRequirements";
+import RegistrationsAdmissions from "./screens/RegistrationsAdmissions";
 
 function Dashboard() {
   return (
@@ -44,6 +50,18 @@ export default function App() {
 
         <Route path="/dashboard" element={<Dashboard />}>
           <Route path="" element={<DashboardPanel />} />
+          <Route path="news_events" element={<NewsEvents />} />
+          <Route path="latest_news" element={<LatestNews />} />
+          <Route path="admissions/dates" element={<AdmissionDates />} />
+          <Route
+            path="admissions/listing"
+            element={<RegistrationsAdmissions />}
+          />
+          <Route
+            path="admissions/requirements"
+            element={<AdmissionTestRequirements />}
+          />
+          <Route path="contact_us" element={<ContactUs />} />
         </Route>
       </Routes>
     </>

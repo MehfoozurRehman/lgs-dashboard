@@ -50,8 +50,8 @@ export default function Sidebar({}) {
             }
           />
           <NavLink
-            to="/dashboard/allocate_rewards"
-            title="Allocate Rewards"
+            to="/dashboard/news_events"
+            title="News & Events"
             svg={
               <svg
                 id="Group_1148"
@@ -96,8 +96,8 @@ export default function Sidebar({}) {
             }
           />
           <NavLink
-            to="/dashboard/invoice_bills"
-            title="Invoice & Bills"
+            to="/dashboard/latest_news"
+            title="Latest News"
             svg={
               <svg
                 id="Group_1147"
@@ -163,8 +163,8 @@ export default function Sidebar({}) {
             }
           />
           <NavLink
-            to="/dashboard/settings"
-            title="Settings"
+            to="/dashboard"
+            title="Admissions"
             svg={
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -202,6 +202,131 @@ export default function Sidebar({}) {
                 </g>
               </svg>
             }
+            list={[
+              {
+                to: "/dashboard/admissions/dates",
+                title: "Admission Dates",
+                svg: (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="21.466"
+                    height="21.466"
+                    viewBox="0 0 21.466 21.466"
+                  >
+                    <g
+                      id="Icon_feather-settings"
+                      data-name="Icon feather-settings"
+                      transform="translate(0.75 0.75)"
+                    >
+                      <path
+                        id="Path_798"
+                        data-name="Path 798"
+                        d="M18.945,16.223A2.723,2.723,0,1,1,16.223,13.5,2.723,2.723,0,0,1,18.945,16.223Z"
+                        transform="translate(-6.24 -6.24)"
+                        fill="none"
+                        stroke="#fff"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                      />
+                      <path
+                        id="Path_799"
+                        data-name="Path 799"
+                        d="M18.2,14.206a1.5,1.5,0,0,0,.3,1.652l.054.054a1.816,1.816,0,1,1-2.568,2.568l-.054-.054A1.51,1.51,0,0,0,13.371,19.5v.154a1.815,1.815,0,0,1-3.63,0v-.082a1.5,1.5,0,0,0-.98-1.37,1.5,1.5,0,0,0-1.652.3l-.054.054a1.816,1.816,0,1,1-2.568-2.568l.054-.054a1.51,1.51,0,0,0-1.071-2.559H3.315a1.815,1.815,0,1,1,0-3.63H3.4a1.5,1.5,0,0,0,1.37-.98,1.5,1.5,0,0,0-.3-1.652l-.054-.054A1.816,1.816,0,1,1,6.982,4.486l.054.054a1.5,1.5,0,0,0,1.652.3H8.76a1.5,1.5,0,0,0,.908-1.37V3.315a1.815,1.815,0,0,1,3.63,0V3.4a1.51,1.51,0,0,0,2.559,1.071l.054-.054A1.816,1.816,0,1,1,18.48,6.982l-.054.054a1.5,1.5,0,0,0-.3,1.652V8.76a1.5,1.5,0,0,0,1.37.908h.154a1.815,1.815,0,0,1,0,3.63h-.082a1.5,1.5,0,0,0-1.37.908Z"
+                        transform="translate(-1.5 -1.5)"
+                        fill="none"
+                        stroke="#fff"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                      />
+                    </g>
+                  </svg>
+                ),
+              },
+              {
+                to: "/dashboard/admissions/listing",
+                title: "Registrations/Admissions",
+                svg: (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="21.466"
+                    height="21.466"
+                    viewBox="0 0 21.466 21.466"
+                  >
+                    <g
+                      id="Icon_feather-settings"
+                      data-name="Icon feather-settings"
+                      transform="translate(0.75 0.75)"
+                    >
+                      <path
+                        id="Path_798"
+                        data-name="Path 798"
+                        d="M18.945,16.223A2.723,2.723,0,1,1,16.223,13.5,2.723,2.723,0,0,1,18.945,16.223Z"
+                        transform="translate(-6.24 -6.24)"
+                        fill="none"
+                        stroke="#fff"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                      />
+                      <path
+                        id="Path_799"
+                        data-name="Path 799"
+                        d="M18.2,14.206a1.5,1.5,0,0,0,.3,1.652l.054.054a1.816,1.816,0,1,1-2.568,2.568l-.054-.054A1.51,1.51,0,0,0,13.371,19.5v.154a1.815,1.815,0,0,1-3.63,0v-.082a1.5,1.5,0,0,0-.98-1.37,1.5,1.5,0,0,0-1.652.3l-.054.054a1.816,1.816,0,1,1-2.568-2.568l.054-.054a1.51,1.51,0,0,0-1.071-2.559H3.315a1.815,1.815,0,1,1,0-3.63H3.4a1.5,1.5,0,0,0,1.37-.98,1.5,1.5,0,0,0-.3-1.652l-.054-.054A1.816,1.816,0,1,1,6.982,4.486l.054.054a1.5,1.5,0,0,0,1.652.3H8.76a1.5,1.5,0,0,0,.908-1.37V3.315a1.815,1.815,0,0,1,3.63,0V3.4a1.51,1.51,0,0,0,2.559,1.071l.054-.054A1.816,1.816,0,1,1,18.48,6.982l-.054.054a1.5,1.5,0,0,0-.3,1.652V8.76a1.5,1.5,0,0,0,1.37.908h.154a1.815,1.815,0,0,1,0,3.63h-.082a1.5,1.5,0,0,0-1.37.908Z"
+                        transform="translate(-1.5 -1.5)"
+                        fill="none"
+                        stroke="#fff"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                      />
+                    </g>
+                  </svg>
+                ),
+              },
+              {
+                to: "/dashboard/admissions/requirements",
+                title: "Test Requirements",
+                svg: (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="21.466"
+                    height="21.466"
+                    viewBox="0 0 21.466 21.466"
+                  >
+                    <g
+                      id="Icon_feather-settings"
+                      data-name="Icon feather-settings"
+                      transform="translate(0.75 0.75)"
+                    >
+                      <path
+                        id="Path_798"
+                        data-name="Path 798"
+                        d="M18.945,16.223A2.723,2.723,0,1,1,16.223,13.5,2.723,2.723,0,0,1,18.945,16.223Z"
+                        transform="translate(-6.24 -6.24)"
+                        fill="none"
+                        stroke="#fff"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                      />
+                      <path
+                        id="Path_799"
+                        data-name="Path 799"
+                        d="M18.2,14.206a1.5,1.5,0,0,0,.3,1.652l.054.054a1.816,1.816,0,1,1-2.568,2.568l-.054-.054A1.51,1.51,0,0,0,13.371,19.5v.154a1.815,1.815,0,0,1-3.63,0v-.082a1.5,1.5,0,0,0-.98-1.37,1.5,1.5,0,0,0-1.652.3l-.054.054a1.816,1.816,0,1,1-2.568-2.568l.054-.054a1.51,1.51,0,0,0-1.071-2.559H3.315a1.815,1.815,0,1,1,0-3.63H3.4a1.5,1.5,0,0,0,1.37-.98,1.5,1.5,0,0,0-.3-1.652l-.054-.054A1.816,1.816,0,1,1,6.982,4.486l.054.054a1.5,1.5,0,0,0,1.652.3H8.76a1.5,1.5,0,0,0,.908-1.37V3.315a1.815,1.815,0,0,1,3.63,0V3.4a1.51,1.51,0,0,0,2.559,1.071l.054-.054A1.816,1.816,0,1,1,18.48,6.982l-.054.054a1.5,1.5,0,0,0-.3,1.652V8.76a1.5,1.5,0,0,0,1.37.908h.154a1.815,1.815,0,0,1,0,3.63h-.082a1.5,1.5,0,0,0-1.37.908Z"
+                        transform="translate(-1.5 -1.5)"
+                        fill="none"
+                        stroke="#fff"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                      />
+                    </g>
+                  </svg>
+                ),
+              },
+            ]}
           />
 
           <NavLink
@@ -378,8 +503,8 @@ export default function Sidebar({}) {
             }
           />
           <NavLink
-            to="/dashboard/call_us"
-            title="Call Us"
+            to="/dashboard/contact_us"
+            title="Contact Us"
             svg={
               <svg
                 xmlns="http://www.w3.org/2000/svg"
