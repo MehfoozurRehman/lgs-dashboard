@@ -12,14 +12,6 @@ export default function TestimonialsForm({ heading }) {
       <div className="main__header" style={{ height: "8%" }}>
         <div className="main__header__top">
           <div className="main__header__top__heading">
-            <button
-              className="main__header__top__heading__button"
-              onClick={() => {
-                navigate("/dashboard/testimonials");
-              }}
-            >
-              <ArrowLeft size={20} color="currentColor" />
-            </button>
             {heading} Testimonials
           </div>
           <div className="main__header__top__buttons">

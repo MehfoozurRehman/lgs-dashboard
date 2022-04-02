@@ -25,6 +25,7 @@ import EventsGallery from "./screens/EventsGallery";
 import MediaPublications from "./screens/MediaPublications";
 import AcademicCalendar from "./screens/AcademicCalendar";
 import LatestNewsPopup from "./components/LatestNewsPopup";
+import NewsEventsPopup from "./components/NewsEventsPopup";
 
 function Dashboard() {
   return (
@@ -39,6 +40,8 @@ export default function App() {
   const [isDeleteConfirmation, setIsDeleteConfirmation] = useState(false);
   const [isAddLatestNewsPopup, setIsAddLatestNewsPopup] = useState(false);
   const [isEditLatestNewsPopup, setIsEditLatestNewsPopup] = useState(false);
+  const [isAddNewsEventsPopup, setIsAddNewsEventsPopup] = useState(false);
+  const [isEditNewsEventsPopup, setIsEditNewsEventsPopup] = useState(false);
 
   return (
     <>
@@ -62,6 +65,20 @@ export default function App() {
           onSubmit={setIsEditLatestNewsPopup}
         />
       ) : null}
+      {isAddNewsEventsPopup ? (
+        <NewsEventsPopup
+          onClose={setIsAddNewsEventsPopup}
+          onSubmit={setIsAddNewsEventsPopup}
+        />
+      ) : null}
+
+      {isEditNewsEventsPopup ? (
+        <NewsEventsPopup
+          isEdit={true}
+          onClose={setIsEditNewsEventsPopup}
+          onSubmit={setIsEditNewsEventsPopup}
+        />
+      ) : null}
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/sign_up" element={<Signup />} />
@@ -72,7 +89,16 @@ export default function App() {
         <Route path="/dashboard" element={<Dashboard />}>
           <Route path="" element={<DashboardPanel />} />
           <Route path="academic_calendar" element={<AcademicCalendar />} />
-          <Route path="news_events" element={<NewsEvents />} />
+          <Route
+            path="news_events"
+            element={
+              <NewsEvents
+                onAdd={setIsAddNewsEventsPopup}
+                onEdit={setIsEditNewsEventsPopup}
+                onDelete={setIsDeleteConfirmation}
+              />
+            }
+          />
           <Route
             path="latest_news"
             element={

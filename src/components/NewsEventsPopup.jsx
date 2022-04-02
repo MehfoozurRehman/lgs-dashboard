@@ -1,8 +1,9 @@
 import React from "react";
 import { X } from "react-feather";
+import TextArea from "./TextArea";
 import UploadImage from "./UploadImage";
 
-export default function CategoryPopup({ onClose, onSubmit, isEdit }) {
+export default function NewsEventsPopup({ onClose, onSubmit, isEdit }) {
   return (
     <div className="popup">
       <form className="popup__form">
@@ -14,22 +15,29 @@ export default function CategoryPopup({ onClose, onSubmit, isEdit }) {
           <X size={15} color="currentColor" strokeWidth={4} />
         </button>
         <div className="popup__form__heading">
-          {isEdit ? "Edit" : "Add"} Category
+          {isEdit ? "Edit" : "Add"} News & Events
         </div>
         <div className="popup__form__row">
           <div className="popup__form__input">
-            <div className="popup__form__input__label">Name</div>
+            <div className="popup__form__input__label">Title</div>
             <input
               type="text"
               className="popup__form__input__field"
-              placeholder="Enter Name"
+              placeholder="Enter Title"
             />
             <div className="popup__form__input__error"></div>
           </div>
         </div>
         <div className="popup__form__row">
-          <UploadImage label="Active Image" />
-          <UploadImage label="InActive Image" />
+          <div className="popup__form__input">
+            <div className="popup__form__input__label">Description</div>
+            <TextArea />
+            <div className="popup__form__input__error"></div>
+          </div>
+        </div>
+        <div className="popup__form__row">
+          <UploadImage label="Thumbnail Image" />
+          <UploadImage label="Banner Image" />
         </div>
         <button onClick={() => onSubmit(false)} className="popup__form__button">
           {isEdit ? "Edit" : "Add"}
