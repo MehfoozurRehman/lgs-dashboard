@@ -5,7 +5,7 @@ function AlumniRegistrationTableEntry({ onEdit, onView, onDelete }) {
   return (
     <div className="main__content__table__list">
       <div className="main__content__table__list__entry">
-        <button
+        {/* <button
           className="main__content__table__list__entry__button main__content__table__list__entry__button__primary"
           onClick={onEdit}
         >
@@ -64,7 +64,7 @@ function AlumniRegistrationTableEntry({ onEdit, onView, onDelete }) {
               fill="currentColor"
             />
           </svg>
-        </button>
+        </button> */}
         <button
           className="main__content__table__list__entry__button main__content__table__list__entry__button__secondary"
           onClick={onDelete}
@@ -130,14 +130,14 @@ export default function AlumniRegistration({
             {/* <button className="main__header__top__buttons__button">
               Bulk Add
             </button> */}
-            <button
+            {/* <button
               className="main__header__top__buttons__button"
               onClick={() => {
                 onAdd(true);
               }}
             >
               Add New
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
