@@ -23,6 +23,7 @@ import UniversityPlacement from "./screens/UniversityPlacement";
 import AlumniRegistration from "./screens/AlumniRegistration";
 import EventsGallery from "./screens/EventsGallery";
 import MediaPublications from "./screens/MediaPublications";
+import AcademicCalendar from "./screens/AcademicCalendar";
 
 function Dashboard() {
   return (
@@ -54,6 +55,7 @@ export default function App() {
 
         <Route path="/dashboard" element={<Dashboard />}>
           <Route path="" element={<DashboardPanel />} />
+          <Route path="academic_calendar" element={<AcademicCalendar />} />
           <Route path="news_events" element={<NewsEvents />} />
           <Route path="latest_news" element={<LatestNews />} />
           <Route path="admissions/dates" element={<AdmissionDates />} />

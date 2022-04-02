@@ -18,12 +18,9 @@ export default function Sidebar({}) {
             <div className="container__sidebar__header__content__name">
               Dayyan Shahid
             </div>
-            <Link
-              to="/dashboard/settings/edit_profile"
-              className="container__sidebar__header__content__link"
-            >
-              Edit Profile
-            </Link>
+            <div className="container__sidebar__header__content__link">
+              Teacher
+            </div>
           </div>
         </div>
         <div className="container__sidebar__content">
@@ -46,6 +43,42 @@ export default function Sidebar({}) {
                   stroke="currentColor"
                   stroke-width="1"
                 />
+              </svg>
+            }
+          />
+          <NavLink
+            to="/dashboard/academic_calendar"
+            title="Academic Calendar"
+            svg={
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20.011"
+                height="15.008"
+                viewBox="0 0 20.011 15.008"
+              >
+                <g
+                  id="_01_align_center"
+                  data-name="01 align center"
+                  transform="translate(0 -3)"
+                >
+                  <ellipse
+                    id="Ellipse_25"
+                    data-name="Ellipse 25"
+                    cx="1"
+                    cy="1.5"
+                    rx="1"
+                    ry="1.5"
+                    transform="translate(4 12)"
+                    fill="currentColor"
+                  />
+                  <path
+                    id="Path_2254"
+                    data-name="Path 2254"
+                    d="M17.51,3H2.5A2.5,2.5,0,0,0,0,5.5V18.008H20.011V5.5A2.5,2.5,0,0,0,17.51,3ZM2.5,4.668H17.51a.834.834,0,0,1,.834.834V7.169H1.668V5.5A.834.834,0,0,1,2.5,4.668ZM1.668,16.341v-7.5H18.343v7.5Z"
+                    transform="translate(0)"
+                    fill="currentColor"
+                  />
+                </g>
               </svg>
             }
           />
