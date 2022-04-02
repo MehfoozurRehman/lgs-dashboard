@@ -19,6 +19,9 @@ import AdmissionTestRequirements from "./screens/AdmissionTestRequirements";
 import RegistrationsAdmissions from "./screens/RegistrationsAdmissions";
 import Complaints from "./screens/Complaints";
 import Careers from "./screens/Careers";
+import Appointments from "./screens/Appointments";
+import LearningDevelopmentPrograms from "./screens/LearningDevelopmentPrograms";
+import UniversityPlacement from "./screens/UniversityPlacement";
 
 function Dashboard() {
   return (
@@ -65,6 +68,15 @@ export default function App() {
           />
           <Route path="complaints" element={<Complaints />} />
           <Route path="careers" element={<Careers />} />
+          <Route path="counselling/appointments" element={<Appointments />} />
+          <Route
+            path="counselling/programs"
+            element={<LearningDevelopmentPrograms />}
+          />
+          <Route
+            path="counselling/placement"
+            element={<UniversityPlacement />}
+          />
           <Route path="contact_us" element={<ContactUs />} />
         </Route>
       </Routes>
