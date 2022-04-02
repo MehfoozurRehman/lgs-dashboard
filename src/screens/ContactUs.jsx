@@ -57,14 +57,14 @@ export default function ContactUs({ onAdd, onEdit, onView, onDelete }) {
             {/* <button className="main__header__top__buttons__button">
               Bulk Add
             </button> */}
-            <button
+            {/* <button
               className="main__header__top__buttons__button"
               onClick={() => {
                 onAdd(true);
               }}
             >
               Add New
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

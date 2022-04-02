@@ -138,7 +138,10 @@ export default function App() {
             path="campus_life/publications"
             element={<MediaPublications />}
           />
-          <Route path="contact_us" element={<ContactUs />} />
+          <Route
+            path="contact_us"
+            element={<ContactUs onDelete={setIsDeleteConfirmation} />}
+          />
         </Route>
       </Routes>
     </>
