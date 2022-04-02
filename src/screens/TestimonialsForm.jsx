@@ -18,7 +18,7 @@ export default function TestimonialsForm({ heading }) {
             <button
               className="main__header__top__buttons__button"
               onClick={() => {
-                navigate("/dashboard/testimonials");
+                // navigate("/dashboard/testimonials");
               }}
             >
               {heading === "Add" ? "Add New" : "Save"}

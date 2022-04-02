@@ -26,6 +26,9 @@ import MediaPublications from "./screens/MediaPublications";
 import AcademicCalendar from "./screens/AcademicCalendar";
 import LatestNewsPopup from "./components/LatestNewsPopup";
 import NewsEventsPopup from "./components/NewsEventsPopup";
+import Gallery from "./screens/Gallery";
+import EventsGalleryPopup from "./components/EventsGalleryPopup";
+import MediaPublicationPopup from "./components/MediaPublicationPopup";
 
 function Dashboard() {
   return (
@@ -42,6 +45,13 @@ export default function App() {
   const [isEditLatestNewsPopup, setIsEditLatestNewsPopup] = useState(false);
   const [isAddNewsEventsPopup, setIsAddNewsEventsPopup] = useState(false);
   const [isEditNewsEventsPopup, setIsEditNewsEventsPopup] = useState(false);
+  const [isAddEventsGalleryPopup, setIsAddEventsGalleryPopup] = useState(false);
+  const [isEditEventsGalleryPopup, setIsEditEventsGalleryPopup] =
+    useState(false);
+  const [isAddMediaPublicationPopup, setIsAddMediaPublicationPopup] =
+    useState(false);
+  const [isEditMediaPublicationPopup, setIsEditMediaPublicationPopup] =
+    useState(false);
 
   return (
     <>
@@ -57,7 +67,6 @@ export default function App() {
           onSubmit={setIsAddLatestNewsPopup}
         />
       ) : null}
-
       {isEditLatestNewsPopup ? (
         <LatestNewsPopup
           isEdit={true}
@@ -71,7 +80,19 @@ export default function App() {
           onSubmit={setIsAddNewsEventsPopup}
         />
       ) : null}
-
+      {isEditEventsGalleryPopup ? (
+        <EventsGalleryPopup
+          isEdit={true}
+          onClose={setIsEditEventsGalleryPopup}
+          onSubmit={setIsEditEventsGalleryPopup}
+        />
+      ) : null}
+      {isAddEventsGalleryPopup ? (
+        <EventsGalleryPopup
+          onClose={setIsAddEventsGalleryPopup}
+          onSubmit={setIsAddEventsGalleryPopup}
+        />
+      ) : null}
       {isEditNewsEventsPopup ? (
         <NewsEventsPopup
           isEdit={true}
@@ -79,6 +100,20 @@ export default function App() {
           onSubmit={setIsEditNewsEventsPopup}
         />
       ) : null}
+      {isAddMediaPublicationPopup ? (
+        <MediaPublicationPopup
+          onClose={setIsAddMediaPublicationPopup}
+          onSubmit={setIsAddMediaPublicationPopup}
+        />
+      ) : null}
+      {isEditMediaPublicationPopup ? (
+        <MediaPublicationPopup
+          isEdit={true}
+          onClose={setIsEditMediaPublicationPopup}
+          onSubmit={setIsEditMediaPublicationPopup}
+        />
+      ) : null}
+
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/sign_up" element={<Signup />} />
@@ -88,7 +123,10 @@ export default function App() {
 
         <Route path="/dashboard" element={<Dashboard />}>
           <Route path="" element={<DashboardPanel />} />
-          <Route path="academic_calendar" element={<AcademicCalendar />} />
+          <Route
+            path="academic_calendar"
+            element={<AcademicCalendar onDelete={setIsDeleteConfirmation} />}
+          />
           <Route
             path="news_events"
             element={
@@ -109,34 +147,75 @@ export default function App() {
               />
             }
           />
-          <Route path="admissions/dates" element={<AdmissionDates />} />
+          <Route
+            path="admissions/dates"
+            element={<AdmissionDates onDelete={setIsDeleteConfirmation} />}
+          />
           <Route
             path="admissions/listing"
-            element={<RegistrationsAdmissions />}
+            element={
+              <RegistrationsAdmissions onDelete={setIsDeleteConfirmation} />
+            }
           />
           <Route
             path="admissions/requirements"
-            element={<AdmissionTestRequirements />}
+            element={
+              <AdmissionTestRequirements onDelete={setIsDeleteConfirmation} />
+            }
           />
-          <Route path="complaints" element={<Complaints />} />
-          <Route path="careers" element={<Careers />} />
-          <Route path="counselling/appointments" element={<Appointments />} />
+          <Route
+            path="complaints"
+            element={<Complaints onDelete={setIsDeleteConfirmation} />}
+          />
+          <Route
+            path="careers"
+            element={<Careers onDelete={setIsDeleteConfirmation} />}
+          />
+          <Route
+            path="counselling/appointments"
+            element={<Appointments onDelete={setIsDeleteConfirmation} />}
+          />
           <Route
             path="counselling/programs"
-            element={<LearningDevelopmentPrograms />}
+            element={
+              <LearningDevelopmentPrograms onDelete={setIsDeleteConfirmation} />
+            }
           />
           <Route
             path="counselling/placement"
-            element={<UniversityPlacement />}
+            element={<UniversityPlacement onDelete={setIsDeleteConfirmation} />}
           />
           <Route
             path="alumni/alumni_registration"
-            element={<AlumniRegistration />}
+            element={<AlumniRegistration onDelete={setIsDeleteConfirmation} />}
           />
-          <Route path="alumni/events_gallery" element={<EventsGallery />} />
+          <Route
+            path="alumni/events_gallery"
+            element={
+              <EventsGallery
+                onAdd={setIsAddEventsGalleryPopup}
+                onEdit={setIsEditEventsGalleryPopup}
+                onDelete={setIsDeleteConfirmation}
+              />
+            }
+          />
+          <Route
+            path="alumni/events_gallery/details"
+            element={<Gallery heading="Events Gallery" />}
+          />
           <Route
             path="campus_life/publications"
-            element={<MediaPublications />}
+            element={
+              <MediaPublications
+                onAdd={setIsAddMediaPublicationPopup}
+                onEdit={setIsEditMediaPublicationPopup}
+                onDelete={setIsDeleteConfirmation}
+              />
+            }
+          />
+          <Route
+            path="campus_life/publications/details"
+            element={<Gallery heading="Media & Publications Gallery" />}
           />
           <Route
             path="contact_us"
