@@ -1,11 +1,11 @@
 import React from "react";
 import TableHeaderEntry from "../components/TableHeaderEntry";
 
-function AdmissionDatesTableEntry({ onEdit, onDelete }) {
+function ComplaintsTableEntry({ onEdit, onDelete }) {
   return (
     <div className="main__content__table__list">
       <div className="main__content__table__list__entry">
-        <button
+        {/* <button
           className="main__content__table__list__entry__button main__content__table__list__entry__button__primary"
           onClick={onEdit}
         >
@@ -64,7 +64,7 @@ function AdmissionDatesTableEntry({ onEdit, onDelete }) {
               fill="currentColor"
             />
           </svg>
-        </button>
+        </button> */}
         <button
           className="main__content__table__list__entry__button main__content__table__list__entry__button__secondary"
           onClick={onDelete}
@@ -86,31 +86,33 @@ function AdmissionDatesTableEntry({ onEdit, onDelete }) {
         </button>
       </div>
       <div className="main__content__table__list__entry">Bilal</div>
-      <div className="main__content__table__list__entry">22/12/2022</div>
-      <div className="main__content__table__list__entry">22/12/2022</div>
-      <div className="main__content__table__list__entry">22/12/2022</div>
+      <div className="main__content__table__list__entry">+92 321 1231231</div>
+      <div className="main__content__table__list__entry">Matric</div>
+      <div className="main__content__table__list__entry">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, harum?
+      </div>
     </div>
   );
 }
 
-export default function AdmissionDates({ onAdd, onEdit, onDelete }) {
+export default function Complaints({ onAdd, onEdit, onDelete }) {
   return (
     <div className="main">
       <div className="main__header">
         <div className="main__header__top">
-          <div className="main__header__top__heading">Admission Dates</div>
+          <div className="main__header__top__heading">Complaints</div>
           <div className="main__header__top__buttons">
             {/* <button className="main__header__top__buttons__button">
               Bulk Add
             </button> */}
-            <button
+            {/* <button
               className="main__header__top__buttons__button"
               onClick={() => {
                 onAdd(true);
               }}
             >
               Add New
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
@@ -118,44 +120,44 @@ export default function AdmissionDates({ onAdd, onEdit, onDelete }) {
         <div className="main__content__table">
           <div className="main__content__table__header">
             <TableHeaderEntry title="Action" />
-            <TableHeaderEntry title="Grade Type " />
-            <TableHeaderEntry title="Early Admission Test" />
-            <TableHeaderEntry title="Regular Admission Test-1" />
-            <TableHeaderEntry title="Regular Admission Test-2" />
+            <TableHeaderEntry title="Name" />
+            <TableHeaderEntry title="Phone" />
+            <TableHeaderEntry title="Class" />
+            <TableHeaderEntry title="Address" />
           </div>
-          <AdmissionDatesTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <AdmissionDatesTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <AdmissionDatesTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <AdmissionDatesTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <AdmissionDatesTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <AdmissionDatesTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <AdmissionDatesTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <AdmissionDatesTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <AdmissionDatesTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <AdmissionDatesTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <AdmissionDatesTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <AdmissionDatesTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <AdmissionDatesTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <AdmissionDatesTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <AdmissionDatesTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <AdmissionDatesTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <AdmissionDatesTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <AdmissionDatesTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <AdmissionDatesTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <AdmissionDatesTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <AdmissionDatesTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <AdmissionDatesTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <AdmissionDatesTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <AdmissionDatesTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <AdmissionDatesTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <AdmissionDatesTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <AdmissionDatesTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <AdmissionDatesTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <AdmissionDatesTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <AdmissionDatesTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <AdmissionDatesTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <AdmissionDatesTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <AdmissionDatesTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <ComplaintsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <ComplaintsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <ComplaintsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <ComplaintsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <ComplaintsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <ComplaintsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <ComplaintsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <ComplaintsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <ComplaintsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <ComplaintsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <ComplaintsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <ComplaintsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <ComplaintsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <ComplaintsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <ComplaintsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <ComplaintsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <ComplaintsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <ComplaintsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <ComplaintsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <ComplaintsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <ComplaintsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <ComplaintsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <ComplaintsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <ComplaintsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <ComplaintsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <ComplaintsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <ComplaintsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <ComplaintsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <ComplaintsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <ComplaintsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <ComplaintsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <ComplaintsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <ComplaintsTableEntry onEdit={onEdit} onDelete={onDelete} />
         </div>
       </div>
     </div>

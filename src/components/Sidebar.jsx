@@ -328,10 +328,9 @@ export default function Sidebar({}) {
               },
             ]}
           />
-
           <NavLink
-            to="/dashboard/history_promos"
-            title="History Promos"
+            to="/dashboard/complaints"
+            title="Complaints"
             svg={
               <svg
                 id="Group_1146"

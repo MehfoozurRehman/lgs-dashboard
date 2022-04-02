@@ -17,6 +17,7 @@ import ContactUs from "./screens/ContactUs";
 import AdmissionDates from "./screens/AdmissionDates";
 import AdmissionTestRequirements from "./screens/AdmissionTestRequirements";
 import RegistrationsAdmissions from "./screens/RegistrationsAdmissions";
+import Complaints from "./screens/Complaints";
 
 function Dashboard() {
   return (
@@ -61,6 +62,7 @@ export default function App() {
             path="admissions/requirements"
             element={<AdmissionTestRequirements />}
           />
+          <Route path="complaints" element={<Complaints />} />
           <Route path="contact_us" element={<ContactUs />} />
         </Route>
       </Routes>
