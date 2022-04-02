@@ -59,6 +59,7 @@ export default function App() {
         <LatestNewsPopup
           isEdit={true}
           onClose={setIsEditLatestNewsPopup}
+          onSubmit={setIsEditLatestNewsPopup}
         />
       ) : null}
       <Routes>
