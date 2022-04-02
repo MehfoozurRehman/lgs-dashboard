@@ -1035,7 +1035,8 @@ body {
   margin-right: 1em;
 }
 .popup__form__upload {
-  width: 120px;
+  min-width: 120px;
+  width: 100%;
   height: 120px;
   position: relative;
   background-color: white;
@@ -1091,6 +1092,9 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 5px;
+}
+iframe {
+  overflow: hidden;
 }
 .popup__form__button {
   background: #005dff;
