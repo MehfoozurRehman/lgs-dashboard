@@ -51,7 +51,7 @@ export default function CreatePromoCodePopup({ onClose, onSubmit, isEdit }) {
               </div>
             }
             labelColor="#ffffff"
-            checkedColor="#9A7CB8"
+            checkedColor="#005dff"
             unCheckedColor="#f6f6f6"
             iconColor="#ffffff"
             style={{ borderRadius: 20 }}
@@ -65,7 +65,7 @@ export default function CreatePromoCodePopup({ onClose, onSubmit, isEdit }) {
               <div className="checkbox__content__label">Percentage</div>
             }
             labelColor="#ffffff"
-            checkedColor="#9A7CB8"
+            checkedColor="#005dff"
             unCheckedColor="#f6f6f6"
             iconColor="#ffffff"
             style={{ borderRadius: 20 }}

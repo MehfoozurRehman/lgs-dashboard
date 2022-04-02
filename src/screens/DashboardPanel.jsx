@@ -201,8 +201,8 @@ function TotalReceipt({}) {
     datasets: [
       {
         data: [40, 40, 20],
-        backgroundColor: ["#37CE69", "#9A7CB8", "#D2D2D2"],
-        borderColor: ["#37CE69", "#9A7CB8", "#D2D2D2"],
+        backgroundColor: ["#f7c902", "#005dff", "#D2D2D2"],
+        borderColor: ["#f7c902", "#005dff", "#D2D2D2"],
         borderWidth: 0,
       },
     ],
@@ -222,7 +222,7 @@ function TotalReceipt({}) {
         <div className="dashboard__panel__content__traffic__source__content__entry">
           <div
             className="dashboard__panel__content__traffic__source__content__entry__icon"
-            style={{ background: "#9A7CB8" }}
+            style={{ background: "#005dff" }}
           ></div>
           <div className="dashboard__panel__content__traffic__source__content__entry__data">
             Amount
@@ -231,7 +231,7 @@ function TotalReceipt({}) {
         <div className="dashboard__panel__content__traffic__source__content__entry">
           <div
             className="dashboard__panel__content__traffic__source__content__entry__icon"
-            style={{ background: "#37CE69" }}
+            style={{ background: "#f7c902" }}
           ></div>
           <div className="dashboard__panel__content__traffic__source__content__entry__data">
             Amount
@@ -297,14 +297,14 @@ function TotalCustomer({}) {
       {
         label: "Site Page",
         data: [40, 40, 20, 40, 40, 20, 40, 40, 20, 40, 40, 20],
-        borderColor: "#37CE69",
-        backgroundColor: "#37CE69",
+        borderColor: "#f7c902",
+        backgroundColor: "#f7c902",
       },
       {
         label: "Blog",
         data: [10, 30, 100, 10, 30, 100, 10, 30, 100, 10, 30, 100],
-        borderColor: "#9A7CB8",
-        backgroundColor: "#9A7CB8",
+        borderColor: "#005dff",
+        backgroundColor: "#005dff",
       },
     ],
   };
@@ -312,7 +312,7 @@ function TotalCustomer({}) {
     <div className="dashboard__panel__content__post__created">
       <div className="dashboard__panel__content__post__created__header">
         <div className="dashboard__panel__content__post__created__header__heading">
-          Total Customer
+          Total Registrations
         </div>
         <input
           type="month"
@@ -332,8 +332,8 @@ function TotalDiscount({}) {
     datasets: [
       {
         data: [50, 30],
-        backgroundColor: ["#37CE69", "#9A7CB8"],
-        borderColor: ["#37CE69", "#9A7CB8"],
+        backgroundColor: ["#f7c902", "#005dff"],
+        borderColor: ["#f7c902", "#005dff"],
         borderWidth: 0,
       },
     ],
@@ -411,7 +411,7 @@ function TotalPurchases() {
       {
         label: "Dataset 1",
         data: [10, 30, 20, 10, 30, 40, 10, 100, 50, 60, 70, 80, 70, 80],
-        backgroundColor: "#9A7CB8",
+        backgroundColor: "#005dff",
       },
     ],
   };

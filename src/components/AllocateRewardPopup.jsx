@@ -62,7 +62,7 @@ export default function AllocateRewardPopup({ onClose, onSubmit, isEdit }) {
                 colors: {
                   ...theme.colors,
                   primary25: "#f6f6f6",
-                  primary: "#9a7cb8",
+                  primary: "#005dff",
                   primary50: "#f6f6f6",
                 },
               })}

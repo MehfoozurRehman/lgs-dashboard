@@ -8,9 +8,7 @@ import ForgotPassword from "./screens/ForgotPassword";
 import Sidebar from "./components/Sidebar";
 import DashboardPanel from "./screens/DashboardPanel";
 import DeleteConfirmation from "./components/DeleteConfirmation";
-import Signup2nd from "./screens/Signup2nd";
 import OtpEmail from "./screens/OtpEmail";
-import SignupLast from "./screens/Signuplast";
 import NewsEvents from "./screens/NewsEvents";
 import LatestNews from "./screens/LatestNews";
 import ContactUs from "./screens/ContactUs";
@@ -22,6 +20,9 @@ import Careers from "./screens/Careers";
 import Appointments from "./screens/Appointments";
 import LearningDevelopmentPrograms from "./screens/LearningDevelopmentPrograms";
 import UniversityPlacement from "./screens/UniversityPlacement";
+import AlumniRegistration from "./screens/AlumniRegistration";
+import EventsGallery from "./screens/EventsGallery";
+import MediaPublications from "./screens/MediaPublications";
 
 function Dashboard() {
   return (
@@ -47,8 +48,6 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/sign_up" element={<Signup />} />
-        <Route path="/sign_up_next" element={<Signup2nd />} />
-        <Route path="/sign_up_last" element={<SignupLast />} />
         <Route path="/change_password" element={<ChangePassword />} />
         <Route path="/forgot_password" element={<ForgotPassword />} />
         <Route path="/otp_email" element={<OtpEmail />} />
@@ -76,6 +75,15 @@ export default function App() {
           <Route
             path="counselling/placement"
             element={<UniversityPlacement />}
+          />
+          <Route
+            path="alumni/alumni_registration"
+            element={<AlumniRegistration />}
+          />
+          <Route path="alumni/events_gallery" element={<EventsGallery />} />
+          <Route
+            path="campus_life/publications"
+            element={<MediaPublications />}
           />
           <Route path="contact_us" element={<ContactUs />} />
         </Route>

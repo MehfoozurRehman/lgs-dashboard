@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import logo from "../assets/logo.png";
-import authBg from "../assets/authBg.png";
+import authBg from "../assets/authBg.jpg";
 import { Link, useNavigate } from "react-router-dom";
 import InputBox from "../components/InputBox";
 
@@ -16,11 +16,6 @@ export default function OtpEmail() {
             <div className="authentication__container__overlay__form__header__heading">
               OTP Email
             </div>
-            <img
-              src={logo}
-              alt="logo"
-              className="authentication__container__overlay__form__header__img"
-            />
           </div>
           <div className="authentication__container__overlay__form__content">
             <div className="authentication__container__overlay__form__msg">
