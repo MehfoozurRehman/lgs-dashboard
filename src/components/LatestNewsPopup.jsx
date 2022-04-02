@@ -1,8 +1,9 @@
 import React from "react";
 import { X } from "react-feather";
+import TextArea from "./TextArea";
 import UploadImage from "./UploadImage";
 
-export default function RecieptPopup({ onClose, onSubmit, isEdit }) {
+export default function LatestNewsPopup({ onClose, onSubmit, isEdit }) {
   return (
     <div className="popup">
       <form className="popup__form">
@@ -14,43 +15,25 @@ export default function RecieptPopup({ onClose, onSubmit, isEdit }) {
           <X size={15} color="currentColor" strokeWidth={4} />
         </button>
         <div className="popup__form__heading">
-          {isEdit ? "Edit" : "Add"} Reciept
+          {isEdit ? "Edit" : "Add"} Latest News
         </div>
         <div className="popup__form__row">
           <div className="popup__form__input">
-            <div className="popup__form__input__label">Name on Receipt</div>
+            <div className="popup__form__input__label">Posting Date</div>
             <input
-              type="text"
+              type="date"
               className="popup__form__input__field"
-              placeholder="Enter Name on Receipt"
+              placeholder="Enter Posting Date"
             />
             <div className="popup__form__input__error"></div>
           </div>
         </div>
         <div className="popup__form__row">
           <div className="popup__form__input">
-            <div className="popup__form__input__label">Arabic</div>
-            <input
-              type="text"
-              className="popup__form__input__field"
-              placeholder="Enter Arabic"
-            />
+            <div className="popup__form__input__label">Description</div>
+            <TextArea />
             <div className="popup__form__input__error"></div>
           </div>
-        </div>
-        <div className="popup__form__row">
-          <div className="popup__form__input">
-            <div className="popup__form__input__label">Branch</div>
-            <input
-              type="text"
-              className="popup__form__input__field"
-              placeholder="Enter Branch"
-            />
-            <div className="popup__form__input__error"></div>
-          </div>
-        </div>
-        <div className="popup__form__row">
-          <UploadImage label="Upload Reciept" />
         </div>
         <button onClick={() => onSubmit(false)} className="popup__form__button">
           {isEdit ? "Edit" : "Add"}

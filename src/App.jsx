@@ -24,6 +24,7 @@ import AlumniRegistration from "./screens/AlumniRegistration";
 import EventsGallery from "./screens/EventsGallery";
 import MediaPublications from "./screens/MediaPublications";
 import AcademicCalendar from "./screens/AcademicCalendar";
+import LatestNewsPopup from "./components/LatestNewsPopup";
 
 function Dashboard() {
   return (
@@ -36,6 +37,8 @@ function Dashboard() {
 
 export default function App() {
   const [isDeleteConfirmation, setIsDeleteConfirmation] = useState(false);
+  const [isAddLatestNewsPopup, setIsAddLatestNewsPopup] = useState(false);
+  const [isEditLatestNewsPopup, setIsEditLatestNewsPopup] = useState(false);
 
   return (
     <>
@@ -45,7 +48,19 @@ export default function App() {
           onSubmit={setIsDeleteConfirmation}
         />
       ) : null}
+      {isAddLatestNewsPopup ? (
+        <LatestNewsPopup
+          onClose={setIsAddLatestNewsPopup}
+          onSubmit={setIsAddLatestNewsPopup}
+        />
+      ) : null}
 
+      {isEditLatestNewsPopup ? (
+        <LatestNewsPopup
+          isEdit={true}
+          onClose={setIsEditLatestNewsPopup}
+        />
+      ) : null}
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/sign_up" element={<Signup />} />
@@ -57,7 +72,16 @@ export default function App() {
           <Route path="" element={<DashboardPanel />} />
           <Route path="academic_calendar" element={<AcademicCalendar />} />
           <Route path="news_events" element={<NewsEvents />} />
-          <Route path="latest_news" element={<LatestNews />} />
+          <Route
+            path="latest_news"
+            element={
+              <LatestNews
+                onAdd={setIsAddLatestNewsPopup}
+                onEdit={setIsEditLatestNewsPopup}
+                onDelete={setIsDeleteConfirmation}
+              />
+            }
+          />
           <Route path="admissions/dates" element={<AdmissionDates />} />
           <Route
             path="admissions/listing"

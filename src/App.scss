@@ -943,7 +943,7 @@ body {
 }
 .popup__form {
   width: 100%;
-  max-width: 500px;
+  max-width: 550px;
   background-color: #ffffff;
   position: relative;
   padding: 2em;
@@ -982,6 +982,12 @@ body {
 .popup__form__row {
   width: 100%;
   display: flex;
+}
+.popup__form__row .ck-editor {
+  width: 490px !important;
+}
+.popup__form__row .ck-content {
+  height: 200px !important;
 }
 .popup__form__input {
   display: flex;
