@@ -1,7 +1,7 @@
 import React from "react";
 import TableHeaderEntry from "../components/TableHeaderEntry";
 
-function RegistrationsAdmissionsTableEntry({ onEdit, onDelete }) {
+function RegistrationsAdmissionsTableEntry({ onEdit, onView, onDelete }) {
   return (
     <div className="main__content__table__list">
       <div className="main__content__table__list__entry">
@@ -47,7 +47,12 @@ function RegistrationsAdmissionsTableEntry({ onEdit, onDelete }) {
   );
 }
 
-export default function RegistrationsAdmissions({ onAdd, onEdit, onDelete }) {
+export default function RegistrationsAdmissions({
+  onAdd,
+  onEdit,
+  onView,
+  onDelete,
+}) {
   return (
     <div className="main">
       <div className="main__header">

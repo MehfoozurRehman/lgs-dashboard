@@ -1,7 +1,7 @@
 import React from "react";
 import TableHeaderEntry from "../components/TableHeaderEntry";
 
-function NewsEventsTableEntry({ onEdit, onDelete }) {
+function NewsEventsTableEntry({ onEdit, onView, onDelete }) {
   return (
     <div className="main__content__table__list">
       <div className="main__content__table__list__entry">
@@ -115,7 +115,7 @@ function NewsEventsTableEntry({ onEdit, onDelete }) {
   );
 }
 
-export default function NewsEvents({ onAdd, onEdit, onDelete }) {
+export default function NewsEvents({ onAdd, onEdit, onView, onDelete }) {
   return (
     <div className="main">
       <div className="main__header">

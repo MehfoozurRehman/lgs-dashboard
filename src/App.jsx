@@ -18,6 +18,7 @@ import AdmissionDates from "./screens/AdmissionDates";
 import AdmissionTestRequirements from "./screens/AdmissionTestRequirements";
 import RegistrationsAdmissions from "./screens/RegistrationsAdmissions";
 import Complaints from "./screens/Complaints";
+import Careers from "./screens/Careers";
 
 function Dashboard() {
   return (
@@ -63,6 +64,7 @@ export default function App() {
             element={<AdmissionTestRequirements />}
           />
           <Route path="complaints" element={<Complaints />} />
+          <Route path="careers" element={<Careers />} />
           <Route path="contact_us" element={<ContactUs />} />
         </Route>
       </Routes>

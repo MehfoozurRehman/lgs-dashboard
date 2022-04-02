@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function CategoryTableEntry({ onEdit, onDelete }) {
+export default function CategoryTableEntry({ onEdit, onView, onDelete }) {
   return (
     <div className="main__content__table__list">
       <div className="main__content__table__list__entry">

@@ -2,7 +2,7 @@ import React from "react";
 import CategoryTableEntry from "../components/CategoryTableEntry";
 import TableHeaderEntry from "../components/TableHeaderEntry";
 
-export default function Category({ onAdd, onEdit, onDelete }) {
+export default function Category({ onAdd, onEdit, onView, onDelete }) {
   return (
     <div className="main">
       <div className="main__header">

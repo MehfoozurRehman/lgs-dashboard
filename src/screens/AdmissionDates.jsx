@@ -1,7 +1,7 @@
 import React from "react";
 import TableHeaderEntry from "../components/TableHeaderEntry";
 
-function AdmissionDatesTableEntry({ onEdit, onDelete }) {
+function AdmissionDatesTableEntry({ onEdit, onView, onDelete }) {
   return (
     <div className="main__content__table__list">
       <div className="main__content__table__list__entry">
@@ -93,7 +93,7 @@ function AdmissionDatesTableEntry({ onEdit, onDelete }) {
   );
 }
 
-export default function AdmissionDates({ onAdd, onEdit, onDelete }) {
+export default function AdmissionDates({ onAdd, onEdit, onView, onDelete }) {
   return (
     <div className="main">
       <div className="main__header">

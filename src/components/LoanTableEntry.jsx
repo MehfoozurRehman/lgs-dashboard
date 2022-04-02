@@ -1,7 +1,7 @@
 import React from "react";
 import { Edit, Trash } from "react-feather";
 
-export default function LoanTableEntry({ onEdit, onDelete }) {
+export default function LoanTableEntry({ onEdit, onView, onDelete }) {
   return (
     <div className="main__content__table__list">
       <div className="main__content__table__list__entry">

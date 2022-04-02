@@ -1,7 +1,7 @@
 import React from "react";
 import TableHeaderEntry from "../components/TableHeaderEntry";
 
-function ComplaintsTableEntry({ onEdit, onDelete }) {
+function ComplaintsTableEntry({ onEdit, onView, onDelete }) {
   return (
     <div className="main__content__table__list">
       <div className="main__content__table__list__entry">
@@ -95,7 +95,7 @@ function ComplaintsTableEntry({ onEdit, onDelete }) {
   );
 }
 
-export default function Complaints({ onAdd, onEdit, onDelete }) {
+export default function Complaints({ onAdd, onEdit, onView, onDelete }) {
   return (
     <div className="main">
       <div className="main__header">
