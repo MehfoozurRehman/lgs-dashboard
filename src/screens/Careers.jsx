@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import TableHeaderEntry from "../components/TableHeaderEntry";
 
 function CareersTableEntry({ onEdit, onView, onDelete }) {
@@ -66,6 +67,7 @@ function CareersTableEntry({ onEdit, onView, onDelete }) {
 }
 
 export default function Careers({ onAdd, onEdit, onView, onDelete }) {
+  const navigate = useNavigate();
   return (
     <div className="main">
       <div className="main__header">
@@ -98,39 +100,114 @@ export default function Careers({ onAdd, onEdit, onView, onDelete }) {
             <TableHeaderEntry title="Gender" />
             <TableHeaderEntry title="Picture" />
           </div>
-          <CareersTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <CareersTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <CareersTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <CareersTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <CareersTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <CareersTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <CareersTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <CareersTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <CareersTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <CareersTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <CareersTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <CareersTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <CareersTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <CareersTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <CareersTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <CareersTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <CareersTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <CareersTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <CareersTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <CareersTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <CareersTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <CareersTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <CareersTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <CareersTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <CareersTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <CareersTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <CareersTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <CareersTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <CareersTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <CareersTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <CareersTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <CareersTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <CareersTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <CareersTableEntry
+            onView={() => {
+              navigate("/dashboard/careers/details");
+            }}
+            onDelete={onDelete}
+          />
+          <CareersTableEntry
+            onView={() => {
+              navigate("/dashboard/careers/details");
+            }}
+            onDelete={onDelete}
+          />
+          <CareersTableEntry
+            onView={() => {
+              navigate("/dashboard/careers/details");
+            }}
+            onDelete={onDelete}
+          />
+          <CareersTableEntry
+            onView={() => {
+              navigate("/dashboard/careers/details");
+            }}
+            onDelete={onDelete}
+          />
+          <CareersTableEntry
+            onView={() => {
+              navigate("/dashboard/careers/details");
+            }}
+            onDelete={onDelete}
+          />
+          <CareersTableEntry
+            onView={() => {
+              navigate("/dashboard/careers/details");
+            }}
+            onDelete={onDelete}
+          />
+          <CareersTableEntry
+            onView={() => {
+              navigate("/dashboard/careers/details");
+            }}
+            onDelete={onDelete}
+          />
+          <CareersTableEntry
+            onView={() => {
+              navigate("/dashboard/careers/details");
+            }}
+            onDelete={onDelete}
+          />
+          <CareersTableEntry
+            onView={() => {
+              navigate("/dashboard/careers/details");
+            }}
+            onDelete={onDelete}
+          />
+          <CareersTableEntry
+            onView={() => {
+              navigate("/dashboard/careers/details");
+            }}
+            onDelete={onDelete}
+          />
+          <CareersTableEntry
+            onView={() => {
+              navigate("/dashboard/careers/details");
+            }}
+            onDelete={onDelete}
+          />
+          <CareersTableEntry
+            onView={() => {
+              navigate("/dashboard/careers/details");
+            }}
+            onDelete={onDelete}
+          />
+          <CareersTableEntry
+            onView={() => {
+              navigate("/dashboard/careers/details");
+            }}
+            onDelete={onDelete}
+          />
+          <CareersTableEntry
+            onView={() => {
+              navigate("/dashboard/careers/details");
+            }}
+            onDelete={onDelete}
+          />
+          <CareersTableEntry
+            onView={() => {
+              navigate("/dashboard/careers/details");
+            }}
+            onDelete={onDelete}
+          />
+          <CareersTableEntry
+            onView={() => {
+              navigate("/dashboard/careers/details");
+            }}
+            onDelete={onDelete}
+          />
+          <CareersTableEntry
+            onView={() => {
+              navigate("/dashboard/careers/details");
+            }}
+            onDelete={onDelete}
+          />
+          <CareersTableEntry
+            onView={() => {
+              navigate("/dashboard/careers/details");
+            }}
+            onDelete={onDelete}
+          />
         </div>
       </div>
     </div>

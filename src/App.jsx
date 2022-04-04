@@ -37,6 +37,7 @@ import FacultyProfiles from "./screens/FacultyProfiles";
 import FacultyProfilesPopup from "./components/FacultyProfilesPopup";
 import NoticeBoard from "./screens/NoticeBoard";
 import NoticeBoardPopup from "./components/NoticeBoardPopup";
+import CareersDetails from "./screens/CareersDetails";
 
 function Dashboard({ setIsCampusPopup }) {
   return (
@@ -232,6 +233,10 @@ export default function App() {
           <Route
             path="careers"
             element={<Careers onDelete={setIsDeleteConfirmation} />}
+          />
+          <Route
+            path="careers/details"
+            element={<CareersDetails onDelete={setIsDeleteConfirmation} />}
           />
           <Route
             path="counselling/appointments"
