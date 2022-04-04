@@ -22,7 +22,7 @@ export default function UploadPDF({ label }) {
           type="file"
           className="popup__form__upload__input"
           onChange={(e) => {
-            setUpload(e.target.files[0]);
+            setUpload(URL.createObjectURL(e.target.files[0]));
           }}
         />
         <div className="popup__form__upload__content">
@@ -31,7 +31,7 @@ export default function UploadPDF({ label }) {
           ) : (
             <iframe
               className="popup__form__upload__content__img"
-              src={upload != "" ? URL.createObjectURL(upload) : ""}
+              src={upload}
             />
           )}
         </div>
