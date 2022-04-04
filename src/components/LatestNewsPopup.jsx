@@ -1,7 +1,7 @@
 import React from "react";
 import { X } from "react-feather";
 import TextArea from "./TextArea";
-import UploadImage from "./UploadImage";
+import Select from "react-select";
 
 export default function LatestNewsPopup({ onClose, onSubmit, isEdit }) {
   return (
@@ -24,6 +24,29 @@ export default function LatestNewsPopup({ onClose, onSubmit, isEdit }) {
               type="date"
               className="popup__form__input__field"
               placeholder="Enter Posting Date"
+            />
+            <div className="popup__form__input__error"></div>
+          </div>
+        </div>
+        <div className="popup__form__row">
+          <div className="popup__form__input">
+            <div className="popup__form__input__label">Is Featured</div>
+            <Select
+              options={[
+                { value: "chocolate", label: "Chocolate" },
+                { value: "strawberry", label: "Strawberry" },
+                { value: "vanilla", label: "Vanilla" },
+              ]}
+              theme={(theme) => ({
+                ...theme,
+
+                colors: {
+                  ...theme.colors,
+                  primary25: "#f6f6f6",
+                  primary: "#005dff",
+                  primary50: "f6f6f6",
+                },
+              })}
             />
             <div className="popup__form__input__error"></div>
           </div>

@@ -86,6 +86,7 @@ function LatestNewsTableEntry({ onEdit, onView, onDelete }) {
         </button>
       </div>
       <div className="main__content__table__list__entry">Bilal John</div>
+      <div className="main__content__table__list__entry">Yes</div>
       <div className="main__content__table__list__entry">
         <div className="main__content__table__list__entry__message__heading">
           View
@@ -127,6 +128,7 @@ export default function LatestNews({ onAdd, onEdit, onView, onDelete }) {
           <div className="main__content__table__header">
             <TableHeaderEntry title="Action" />
             <TableHeaderEntry title="Posting Date" />
+            <TableHeaderEntry title="Is Featured" />
             <TableHeaderEntry title="Description" />
           </div>
           <LatestNewsTableEntry onEdit={onEdit} onDelete={onDelete} />
