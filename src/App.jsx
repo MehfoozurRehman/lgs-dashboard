@@ -29,6 +29,8 @@ import NewsEventsPopup from "./components/NewsEventsPopup";
 import Gallery from "./screens/Gallery";
 import EventsGalleryPopup from "./components/EventsGalleryPopup";
 import MediaPublicationPopup from "./components/MediaPublicationPopup";
+import ParentsHandBook from "./screens/ParentsHandBook";
+import Messages from "./screens/Messages";
 
 function Dashboard() {
   return (
@@ -214,12 +216,24 @@ export default function App() {
             }
           />
           <Route
+            path="our_campus/messages"
+            element={<Messages onDelete={setIsDeleteConfirmation} />}
+          />
+          <Route
+            path="our_campus/gallery"
+            element={<Gallery heading="Gallery" />}
+          />
+          <Route
             path="campus_life/publications/details"
             element={<Gallery heading="Media & Publications Gallery" />}
           />
           <Route
             path="contact_us"
             element={<ContactUs onDelete={setIsDeleteConfirmation} />}
+          />
+          <Route
+            path="parent_hand_book"
+            element={<ParentsHandBook onDelete={setIsDeleteConfirmation} />}
           />
         </Route>
       </Routes>
