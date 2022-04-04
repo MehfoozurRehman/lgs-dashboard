@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import Select from "react-select";
+import Tab from "../components/Tab";
 import UploadPDF from "../components/UploadPDF";
 
 export default function AcademicCalendarForm({ heading }) {
+  const [active, setActive] = useState("Winter");
   return (
     <div className="main">
       <div className="main__header" style={{ height: "8%" }}>
@@ -29,28 +31,11 @@ export default function AcademicCalendarForm({ heading }) {
         }}
       >
         <div className="main__content__form">
-          <div className="main__content__form__col">
-            <div className="popup__form__input">
-              <div className="popup__form__input__label">Break Type</div>
-              <Select
-                options={[
-                  { value: "chocolate", label: "Chocolate" },
-                  { value: "strawberry", label: "Strawberry" },
-                  { value: "vanilla", label: "Vanilla" },
-                ]}
-                theme={(theme) => ({
-                  ...theme,
-
-                  colors: {
-                    ...theme.colors,
-                    primary25: "#f6f6f6",
-                    primary: "#005dff",
-                    primary50: "f6f6f6",
-                  },
-                })}
-                // isMulti
-              />
-              <div className="popup__form__input__error"></div>
+          <div className="main__content__form__col" style={{ width: "100%" }}>
+            <div className="main__content__form__col__tab__wrapper">
+              <Tab label="Winter" active={active} setActive={setActive} />
+              <Tab label="Spring" active={active} setActive={setActive} />
+              <Tab label="Summer" active={active} setActive={setActive} />
             </div>
           </div>
           <div className="main__content__form__col">
@@ -75,6 +60,7 @@ export default function AcademicCalendarForm({ heading }) {
               <div className="popup__form__input__error"></div>
             </div>
           </div>
+          <div className="main__content__form__col" />
           <div className="main__content__form__col">
             <div className="popup__form__input">
               <div className="popup__form__input__label">PDF</div>
