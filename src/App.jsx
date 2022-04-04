@@ -35,6 +35,8 @@ import MessagesPopup from "./components/MessagesPopup";
 import CampusPopup from "./components/CampusPopup";
 import FacultyProfiles from "./screens/FacultyProfiles";
 import FacultyProfilesPopup from "./components/FacultyProfilesPopup";
+import NoticeBoard from "./screens/NoticeBoard";
+import NoticeBoardPopup from "./components/NoticeBoardPopup";
 
 function Dashboard({ setIsCampusPopup }) {
   return (
@@ -64,6 +66,8 @@ export default function App() {
     useState(false);
   const [isEditFacultyProfilesPopup, setIsEditFacultyProfilesPopup] =
     useState(false);
+  const [isAddNoticeBoardPopup, setIsAddNoticeBoardPopup] = useState(false);
+  const [isEditNoticeBoardPopup, setIsEditNoticeBoardPopup] = useState(false);
   const [isCampusPopup, setIsCampusPopup] = useState(false);
 
   return (
@@ -150,6 +154,19 @@ export default function App() {
           isEdit={true}
           onClose={setIsEditFacultyProfilesPopup}
           onSubmit={setIsEditFacultyProfilesPopup}
+        />
+      ) : null}
+      {isAddNoticeBoardPopup ? (
+        <NoticeBoardPopup
+          onClose={setIsAddNoticeBoardPopup}
+          onSubmit={setIsAddNoticeBoardPopup}
+        />
+      ) : null}
+      {isEditNoticeBoardPopup ? (
+        <NoticeBoardPopup
+          isEdit={true}
+          onClose={setIsEditNoticeBoardPopup}
+          onSubmit={setIsEditNoticeBoardPopup}
         />
       ) : null}
       {isCampusPopup ? (
@@ -278,6 +295,16 @@ export default function App() {
               <FacultyProfiles
                 onAdd={setIsAddFacultyProfilesPopup}
                 onEdit={setIsEditFacultyProfilesPopup}
+                onDelete={setIsDeleteConfirmation}
+              />
+            }
+          />
+          <Route
+            path="our_campus/notice_board"
+            element={
+              <NoticeBoard
+                onAdd={setIsAddNoticeBoardPopup}
+                onEdit={setIsEditNoticeBoardPopup}
                 onDelete={setIsDeleteConfirmation}
               />
             }
