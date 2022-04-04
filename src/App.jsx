@@ -33,6 +33,8 @@ import ParentsHandBook from "./screens/ParentsHandBook";
 import Messages from "./screens/Messages";
 import MessagesPopup from "./components/MessagesPopup";
 import CampusPopup from "./components/CampusPopup";
+import FacultyProfiles from "./screens/FacultyProfiles";
+import FacultyProfilesPopup from "./components/FacultyProfilesPopup";
 
 function Dashboard({ setIsCampusPopup }) {
   return (
@@ -58,6 +60,10 @@ export default function App() {
     useState(false);
   const [isAddMessagePopup, setIsAddMessagePopup] = useState(false);
   const [isEditMessagePopup, setIsEditMessagePopup] = useState(false);
+  const [isAddFacultyProfilesPopup, setIsAddFacultyProfilesPopup] =
+    useState(false);
+  const [isEditFacultyProfilesPopup, setIsEditFacultyProfilesPopup] =
+    useState(false);
   const [isCampusPopup, setIsCampusPopup] = useState(false);
 
   return (
@@ -131,6 +137,19 @@ export default function App() {
           isEdit={true}
           onClose={setIsEditMessagePopup}
           onSubmit={setIsEditMessagePopup}
+        />
+      ) : null}
+      {isAddFacultyProfilesPopup ? (
+        <FacultyProfilesPopup
+          onClose={setIsAddFacultyProfilesPopup}
+          onSubmit={setIsAddFacultyProfilesPopup}
+        />
+      ) : null}
+      {isEditFacultyProfilesPopup ? (
+        <FacultyProfilesPopup
+          isEdit={true}
+          onClose={setIsEditFacultyProfilesPopup}
+          onSubmit={setIsEditFacultyProfilesPopup}
         />
       ) : null}
       {isCampusPopup ? (
@@ -252,6 +271,16 @@ export default function App() {
           <Route
             path="our_campus/gallery"
             element={<Gallery heading="Gallery" backURL={true} />}
+          />
+          <Route
+            path="our_campus/faculty_profiles"
+            element={
+              <FacultyProfiles
+                onAdd={setIsAddFacultyProfilesPopup}
+                onEdit={setIsEditFacultyProfilesPopup}
+                onDelete={setIsDeleteConfirmation}
+              />
+            }
           />
           <Route
             path="campus_life/publications/details"
