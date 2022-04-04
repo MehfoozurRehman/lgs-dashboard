@@ -1,12 +1,9 @@
 import React from "react";
-import { ArrowLeft } from "react-feather";
 import Select from "react-select";
 import UploadImage from "../components/UploadImage";
 import TextArea from "../components/TextArea";
-import { useNavigate } from "react-router-dom";
 
 export default function TestimonialsForm({ heading }) {
-  const navigate = useNavigate();
   return (
     <div className="main">
       <div className="main__header" style={{ height: "8%" }}>
@@ -74,7 +71,6 @@ export default function TestimonialsForm({ heading }) {
                     primary50: "f6f6f6",
                   },
                 })}
-                isMulti
               />
               <div className="popup__form__input__error"></div>
             </div>

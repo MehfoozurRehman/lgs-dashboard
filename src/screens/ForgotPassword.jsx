@@ -1,12 +1,9 @@
-import React, { useState } from "react";
-
+import React from "react";
 import authBg from "../assets/authBg.jpg";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import InputBox from "../components/InputBox";
 
 export default function Signup2nd() {
-  const navigate = useNavigate();
-  const [isChecked, setIschecked] = useState(false);
   return (
     <div className="authentication__container">
       <img src={authBg} alt="" className="authentication__container__img" />

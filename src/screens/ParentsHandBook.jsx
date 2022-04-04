@@ -1,13 +1,7 @@
 import React from "react";
-import { ArrowLeft } from "react-feather";
-import Select from "react-select";
-import UploadImage from "../components/UploadImage";
-import TextArea from "../components/TextArea";
-import { useNavigate } from "react-router-dom";
 import UploadPDF from "../components/UploadPDF";
 
 export default function ParentsHandBook({ heading }) {
-  const navigate = useNavigate();
   return (
     <div className="main">
       <div className="main__header" style={{ height: "8%" }}>

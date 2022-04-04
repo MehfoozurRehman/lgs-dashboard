@@ -1,14 +1,10 @@
 import React, { useState } from "react";
-import { ArrowLeft } from "react-feather";
-import Select from "react-select";
 import UploadImage from "../components/UploadImage";
 import TextArea from "../components/TextArea";
-import { useNavigate } from "react-router-dom";
 import UploadPDF from "../components/UploadPDF";
 import Tab from "../components/Tab";
 
 export default function AdmissionTestRequirementsForm({ heading }) {
-  const navigate = useNavigate();
   const [active, setActive] = useState("English and Urdu");
   return (
     <div className="main">

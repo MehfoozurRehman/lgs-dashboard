@@ -1,13 +1,7 @@
 import React, { useState } from "react";
-import { ArrowLeft } from "react-feather";
-import Select from "react-select";
-import UploadImage from "../components/UploadImage";
-import TextArea from "../components/TextArea";
-import { useNavigate } from "react-router-dom";
 import Tab from "../components/Tab";
 
 export default function AdmissionDatesForm({ heading }) {
-  const navigate = useNavigate();
   const [active, setActive] = useState("Middle School");
   return (
     <div className="main">

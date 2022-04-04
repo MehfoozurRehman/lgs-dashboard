@@ -7,7 +7,6 @@ export default function NavLink({ title, to, svg, list, onClick }) {
     window.localStorage.getItem("selectedMain")
   );
   const [dropDownselected, setDropDownselected] = useState("");
-
   return (
     <div className="nav__link">
       <div
