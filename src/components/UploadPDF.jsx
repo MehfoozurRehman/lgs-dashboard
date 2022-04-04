@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Plus, X } from "react-feather";
 
-export default function UploadPDF({ label }) {
+export default function UploadPDF({ label, style }) {
   const [upload, setUpload] = useState("");
   return (
-    <div className="popup__form__upload__wrapper">
+    <div className="popup__form__upload__wrapper" style={style ? style : null}>
       <div className="popup__form__input__label">{label}</div>
       <div className="popup__form__upload">
         {upload === "" ? null : (

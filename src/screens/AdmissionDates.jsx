@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { ArrowLeft } from "react-feather";
 import Select from "react-select";
 import UploadImage from "../components/UploadImage";
 import TextArea from "../components/TextArea";
 import { useNavigate } from "react-router-dom";
+import Tab from "../components/Tab";
 
 export default function AdmissionDatesForm({ heading }) {
   const navigate = useNavigate();
+  const [active, setActive] = useState("Middle School");
   return (
     <div className="main">
       <div className="main__header" style={{ height: "8%" }}>
@@ -33,28 +35,14 @@ export default function AdmissionDatesForm({ heading }) {
         }}
       >
         <div className="main__content__form">
-          <div className="main__content__form__col">
-            <div className="popup__form__input">
-              <div className="popup__form__input__label">Grade Type</div>
-              <Select
-                options={[
-                  { value: "chocolate", label: "Chocolate" },
-                  { value: "strawberry", label: "Strawberry" },
-                  { value: "vanilla", label: "Vanilla" },
-                ]}
-                theme={(theme) => ({
-                  ...theme,
-
-                  colors: {
-                    ...theme.colors,
-                    primary25: "#f6f6f6",
-                    primary: "#005dff",
-                    primary50: "f6f6f6",
-                  },
-                })}
-                // isMulti
+          <div className="main__content__form__col" style={{ width: "100%" }}>
+            <div className="main__content__form__col__tab__wrapper">
+              <Tab
+                label="Middle School"
+                active={active}
+                setActive={setActive}
               />
-              <div className="popup__form__input__error"></div>
+              <Tab label="O-Levels" active={active} setActive={setActive} />
             </div>
           </div>
           <div className="main__content__form__col">

@@ -1,8 +1,5 @@
 import React from "react";
-import { ArrowLeft } from "react-feather";
-import Select from "react-select";
 import UploadImage from "../components/UploadImage";
-import TextArea from "../components/TextArea";
 import { useNavigate } from "react-router-dom";
 
 export default function TestimonialsForm({ heading, backURL }) {
@@ -32,40 +29,10 @@ export default function TestimonialsForm({ heading, backURL }) {
       >
         <div className="main__content__form">
           <div className="main__content__form__col">
-            <UploadImage label="Image" />
+            <UploadImage />
           </div>
           <div className="main__content__form__col">
-            <UploadImage label="Image" />
-          </div>
-          <div className="main__content__form__col">
-            <UploadImage label="Image" />
-          </div>
-          <div className="main__content__form__col">
-            <UploadImage label="Image" />
-          </div>
-          <div className="main__content__form__col">
-            <UploadImage label="Image" />
-          </div>
-          <div className="main__content__form__col">
-            <UploadImage label="Image" />
-          </div>
-          <div className="main__content__form__col">
-            <UploadImage label="Image" />
-          </div>
-          <div className="main__content__form__col">
-            <UploadImage label="Image" />
-          </div>
-          <div className="main__content__form__col">
-            <UploadImage label="Image" />
-          </div>
-          <div className="main__content__form__col">
-            <UploadImage label="Image" />
-          </div>
-          <div className="main__content__form__col">
-            <UploadImage label="Image" />
-          </div>
-          <div className="main__content__form__col">
-            <UploadImage label="Image" />
+            <UploadImage />
           </div>
         </div>
       </div>
