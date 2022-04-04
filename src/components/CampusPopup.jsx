@@ -1,8 +1,10 @@
 import React from "react";
 import { X } from "react-feather";
+import { useNavigate } from "react-router-dom";
 import Select from "react-select";
 
 export default function CampusPopup({ onClose, onSubmit, isEdit }) {
+  const navigate = useNavigate();
   return (
     <div className="popup">
       <form className="popup__form">
@@ -62,7 +64,13 @@ export default function CampusPopup({ onClose, onSubmit, isEdit }) {
             <div className="popup__form__input__error"></div>
           </div>
         </div>
-        <button onClick={() => onSubmit(false)} className="popup__form__button">
+        <button
+          onClick={() => {
+            onSubmit(false);
+            navigate("/dashboard/our_campus/messages");
+          }}
+          className="popup__form__button"
+        >
           Select
         </button>
       </form>

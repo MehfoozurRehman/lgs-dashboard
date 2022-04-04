@@ -34,10 +34,10 @@ import Messages from "./screens/Messages";
 import MessagesPopup from "./components/MessagesPopup";
 import CampusPopup from "./components/CampusPopup";
 
-function Dashboard() {
+function Dashboard({ setIsCampusPopup }) {
   return (
     <div className="container">
-      <Sidebar />
+      <Sidebar setIsCampusPopup={setIsCampusPopup} />
       <Outlet />
     </div>
   );
@@ -144,7 +144,10 @@ export default function App() {
         <Route path="/forgot_password" element={<ForgotPassword />} />
         <Route path="/otp_email" element={<OtpEmail />} />
 
-        <Route path="/dashboard" element={<Dashboard />}>
+        <Route
+          path="/dashboard"
+          element={<Dashboard setIsCampusPopup={setIsCampusPopup} />}
+        >
           <Route path="" element={<DashboardPanel />} />
           <Route
             path="academic_calendar"
@@ -248,7 +251,7 @@ export default function App() {
           />
           <Route
             path="our_campus/gallery"
-            element={<Gallery heading="Gallery" />}
+            element={<Gallery heading="Gallery" backURL={true} />}
           />
           <Route
             path="campus_life/publications/details"

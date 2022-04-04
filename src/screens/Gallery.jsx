@@ -5,7 +5,7 @@ import UploadImage from "../components/UploadImage";
 import TextArea from "../components/TextArea";
 import { useNavigate } from "react-router-dom";
 
-export default function TestimonialsForm({ heading }) {
+export default function TestimonialsForm({ heading, backURL }) {
   const navigate = useNavigate();
   return (
     <div className="main">
@@ -16,7 +16,7 @@ export default function TestimonialsForm({ heading }) {
             <button
               className="main__header__top__buttons__button"
               onClick={() => {
-                navigate(-1);
+                navigate(backURL ? backURL : -1);
               }}
             >
               {heading === "Add" ? "Add New" : "Save"}

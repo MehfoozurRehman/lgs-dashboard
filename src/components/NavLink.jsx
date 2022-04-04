@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function NavLink({ title, to, svg, list }) {
+export default function NavLink({ title, to, svg, list, onClick }) {
   const navigate = useNavigate();
   const [selected, setSelected] = useState(
     window.localStorage.getItem("selectedMain")
@@ -23,6 +23,7 @@ export default function NavLink({ title, to, svg, list }) {
             navigate(to);
             selected === title ? setSelected(false) : setSelected(title);
             window.localStorage.setItem("selectedMain", title);
+            selected != title ? onClick(true) : null;
           }}
         />
         <div className="nav__link__entry__content">

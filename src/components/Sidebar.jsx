@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import NavLink from "./NavLink";
 import userPic from "../assets/userPic.png";
 
-export default function Sidebar({}) {
+export default function Sidebar({ setIsCampusPopup }) {
   const navigate = useNavigate();
   return (
     <div className="container__sidebar__wrapper">
@@ -561,6 +561,7 @@ export default function Sidebar({}) {
           <NavLink
             to="/dashboard/"
             title="Our Campuses"
+            onClick={setIsCampusPopup}
             svg={
               <svg
                 xmlns="http://www.w3.org/2000/svg"
