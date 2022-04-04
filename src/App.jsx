@@ -201,6 +201,10 @@ export default function App() {
             }
           />
           <Route
+            path="news_events/details"
+            element={<Gallery heading="News Events Gallery" />}
+          />
+          <Route
             path="latest_news"
             element={
               <LatestNews

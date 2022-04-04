@@ -1,10 +1,32 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import TableHeaderEntry from "../components/TableHeaderEntry";
 
 function NewsEventsTableEntry({ onEdit, onView, onDelete }) {
   return (
     <div className="main__content__table__list">
       <div className="main__content__table__list__entry">
+        <button
+          className="main__content__table__list__entry__button main__content__table__list__entry__button__primary"
+          onClick={onView}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-eye"
+            style={{ marginTop: 7 }}
+          >
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+            <circle cx="12" cy="12" r="3"></circle>
+          </svg>
+        </button>
         <button
           className="main__content__table__list__entry__button main__content__table__list__entry__button__primary"
           onClick={onEdit}
@@ -116,6 +138,7 @@ function NewsEventsTableEntry({ onEdit, onView, onDelete }) {
 }
 
 export default function NewsEvents({ onAdd, onEdit, onView, onDelete }) {
+  const navigate = useNavigate();
   return (
     <div className="main">
       <div className="main__header">
@@ -145,39 +168,132 @@ export default function NewsEvents({ onAdd, onEdit, onView, onDelete }) {
             <TableHeaderEntry title="Thumbnail Image" />
             <TableHeaderEntry title="Banner Image" />
           </div>
-          <NewsEventsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <NewsEventsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <NewsEventsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <NewsEventsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <NewsEventsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <NewsEventsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <NewsEventsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <NewsEventsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <NewsEventsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <NewsEventsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <NewsEventsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <NewsEventsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <NewsEventsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <NewsEventsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <NewsEventsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <NewsEventsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <NewsEventsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <NewsEventsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <NewsEventsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <NewsEventsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <NewsEventsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <NewsEventsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <NewsEventsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <NewsEventsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <NewsEventsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <NewsEventsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <NewsEventsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <NewsEventsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <NewsEventsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <NewsEventsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <NewsEventsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <NewsEventsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <NewsEventsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <NewsEventsTableEntry
+            onView={() => {
+              navigate("/dashboard/news_events/details");
+            }}
+            onEdit={onEdit}
+            onDelete={onDelete}
+          />
+          <NewsEventsTableEntry
+            onView={() => {
+              navigate("/dashboard/news_events/details");
+            }}
+            onEdit={onEdit}
+            onDelete={onDelete}
+          />
+          <NewsEventsTableEntry
+            onView={() => {
+              navigate("/dashboard/news_events/details");
+            }}
+            onEdit={onEdit}
+            onDelete={onDelete}
+          />
+          <NewsEventsTableEntry
+            onView={() => {
+              navigate("/dashboard/news_events/details");
+            }}
+            onEdit={onEdit}
+            onDelete={onDelete}
+          />
+          <NewsEventsTableEntry
+            onView={() => {
+              navigate("/dashboard/news_events/details");
+            }}
+            onEdit={onEdit}
+            onDelete={onDelete}
+          />
+          <NewsEventsTableEntry
+            onView={() => {
+              navigate("/dashboard/news_events/details");
+            }}
+            onEdit={onEdit}
+            onDelete={onDelete}
+          />
+          <NewsEventsTableEntry
+            onView={() => {
+              navigate("/dashboard/news_events/details");
+            }}
+            onEdit={onEdit}
+            onDelete={onDelete}
+          />
+          <NewsEventsTableEntry
+            onView={() => {
+              navigate("/dashboard/news_events/details");
+            }}
+            onEdit={onEdit}
+            onDelete={onDelete}
+          />
+          <NewsEventsTableEntry
+            onView={() => {
+              navigate("/dashboard/news_events/details");
+            }}
+            onEdit={onEdit}
+            onDelete={onDelete}
+          />
+          <NewsEventsTableEntry
+            onView={() => {
+              navigate("/dashboard/news_events/details");
+            }}
+            onEdit={onEdit}
+            onDelete={onDelete}
+          />
+          <NewsEventsTableEntry
+            onView={() => {
+              navigate("/dashboard/news_events/details");
+            }}
+            onEdit={onEdit}
+            onDelete={onDelete}
+          />
+          <NewsEventsTableEntry
+            onView={() => {
+              navigate("/dashboard/news_events/details");
+            }}
+            onEdit={onEdit}
+            onDelete={onDelete}
+          />
+          <NewsEventsTableEntry
+            onView={() => {
+              navigate("/dashboard/news_events/details");
+            }}
+            onEdit={onEdit}
+            onDelete={onDelete}
+          />
+          <NewsEventsTableEntry
+            onView={() => {
+              navigate("/dashboard/news_events/details");
+            }}
+            onEdit={onEdit}
+            onDelete={onDelete}
+          />
+          <NewsEventsTableEntry
+            onView={() => {
+              navigate("/dashboard/news_events/details");
+            }}
+            onEdit={onEdit}
+            onDelete={onDelete}
+          />
+          <NewsEventsTableEntry
+            onView={() => {
+              navigate("/dashboard/news_events/details");
+            }}
+            onEdit={onEdit}
+            onDelete={onDelete}
+          />
+          <NewsEventsTableEntry
+            onView={() => {
+              navigate("/dashboard/news_events/details");
+            }}
+            onEdit={onEdit}
+            onDelete={onDelete}
+          />
+          <NewsEventsTableEntry
+            onView={() => {
+              navigate("/dashboard/news_events/details");
+            }}
+            onEdit={onEdit}
+            onDelete={onDelete}
+          />
         </div>
       </div>
     </div>
