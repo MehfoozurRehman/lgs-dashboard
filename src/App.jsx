@@ -31,6 +31,8 @@ import EventsGalleryPopup from "./components/EventsGalleryPopup";
 import MediaPublicationPopup from "./components/MediaPublicationPopup";
 import ParentsHandBook from "./screens/ParentsHandBook";
 import Messages from "./screens/Messages";
+import MessagesPopup from "./components/MessagesPopup";
+import CampusPopup from "./components/CampusPopup";
 
 function Dashboard() {
   return (
@@ -54,6 +56,9 @@ export default function App() {
     useState(false);
   const [isEditMediaPublicationPopup, setIsEditMediaPublicationPopup] =
     useState(false);
+  const [isAddMessagePopup, setIsAddMessagePopup] = useState(false);
+  const [isEditMessagePopup, setIsEditMessagePopup] = useState(false);
+  const [isCampusPopup, setIsCampusPopup] = useState(false);
 
   return (
     <>
@@ -114,6 +119,22 @@ export default function App() {
           onClose={setIsEditMediaPublicationPopup}
           onSubmit={setIsEditMediaPublicationPopup}
         />
+      ) : null}
+      {isAddMessagePopup ? (
+        <MessagesPopup
+          onClose={setIsAddMessagePopup}
+          onSubmit={setIsAddMessagePopup}
+        />
+      ) : null}
+      {isEditMessagePopup ? (
+        <MessagesPopup
+          isEdit={true}
+          onClose={setIsEditMessagePopup}
+          onSubmit={setIsEditMessagePopup}
+        />
+      ) : null}
+      {isCampusPopup ? (
+        <CampusPopup onClose={setIsCampusPopup} onSubmit={setIsCampusPopup} />
       ) : null}
 
       <Routes>
@@ -217,7 +238,13 @@ export default function App() {
           />
           <Route
             path="our_campus/messages"
-            element={<Messages onDelete={setIsDeleteConfirmation} />}
+            element={
+              <Messages
+                onAdd={setIsAddMessagePopup}
+                onEdit={setIsEditMessagePopup}
+                onDelete={setIsDeleteConfirmation}
+              />
+            }
           />
           <Route
             path="our_campus/gallery"

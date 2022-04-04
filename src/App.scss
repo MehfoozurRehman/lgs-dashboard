@@ -1900,6 +1900,9 @@ iframe {
   font-size: 22px;
   font-weight: 500;
 }
+.ck-dropdown__arrow {
+  z-index: 0 !important;
+}
 @media (max-width: 1440px) {
   .dashboard__panel__content__stats__icon {
     padding: 0.7em 1em;
