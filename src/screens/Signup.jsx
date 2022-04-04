@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../assets/logo.png";
+
 import authBg from "../assets/authBg.jpg";
 import { Link } from "react-router-dom";
 import InputBox from "../components/InputBox";
