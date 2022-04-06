@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import TableHeaderEntry from "../components/TableHeaderEntry";
 
 function RegistrationsAdmissionsTableEntry({ onEdit, onView, onDelete }) {
@@ -113,6 +114,7 @@ export default function RegistrationsAdmissions({
   onView,
   onDelete,
 }) {
+  const navigate = useNavigate();
   return (
     <div className="main">
       <div className="main__header">
@@ -127,7 +129,7 @@ export default function RegistrationsAdmissions({
             <button
               className="main__header__top__buttons__button"
               onClick={() => {
-                onAdd(true);
+                navigate("/dashboard/admissions/listing/add");
               }}
             >
               Add New
@@ -145,135 +147,123 @@ export default function RegistrationsAdmissions({
             <TableHeaderEntry title="Message" />
           </div>
           <RegistrationsAdmissionsTableEntry
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/admissions/listing/edit");
+            }}
             onDelete={onDelete}
           />
           <RegistrationsAdmissionsTableEntry
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/admissions/listing/edit");
+            }}
             onDelete={onDelete}
           />
           <RegistrationsAdmissionsTableEntry
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/admissions/listing/edit");
+            }}
             onDelete={onDelete}
           />
           <RegistrationsAdmissionsTableEntry
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/admissions/listing/edit");
+            }}
             onDelete={onDelete}
           />
           <RegistrationsAdmissionsTableEntry
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/admissions/listing/edit");
+            }}
             onDelete={onDelete}
           />
           <RegistrationsAdmissionsTableEntry
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/admissions/listing/edit");
+            }}
             onDelete={onDelete}
           />
           <RegistrationsAdmissionsTableEntry
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/admissions/listing/edit");
+            }}
             onDelete={onDelete}
           />
           <RegistrationsAdmissionsTableEntry
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/admissions/listing/edit");
+            }}
             onDelete={onDelete}
           />
           <RegistrationsAdmissionsTableEntry
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/admissions/listing/edit");
+            }}
             onDelete={onDelete}
           />
           <RegistrationsAdmissionsTableEntry
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/admissions/listing/edit");
+            }}
             onDelete={onDelete}
           />
           <RegistrationsAdmissionsTableEntry
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/admissions/listing/edit");
+            }}
             onDelete={onDelete}
           />
           <RegistrationsAdmissionsTableEntry
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/admissions/listing/edit");
+            }}
             onDelete={onDelete}
           />
           <RegistrationsAdmissionsTableEntry
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/admissions/listing/edit");
+            }}
             onDelete={onDelete}
           />
           <RegistrationsAdmissionsTableEntry
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/admissions/listing/edit");
+            }}
             onDelete={onDelete}
           />
           <RegistrationsAdmissionsTableEntry
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/admissions/listing/edit");
+            }}
             onDelete={onDelete}
           />
           <RegistrationsAdmissionsTableEntry
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/admissions/listing/edit");
+            }}
             onDelete={onDelete}
           />
           <RegistrationsAdmissionsTableEntry
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/admissions/listing/edit");
+            }}
             onDelete={onDelete}
           />
           <RegistrationsAdmissionsTableEntry
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/admissions/listing/edit");
+            }}
             onDelete={onDelete}
           />
           <RegistrationsAdmissionsTableEntry
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/admissions/listing/edit");
+            }}
             onDelete={onDelete}
           />
           <RegistrationsAdmissionsTableEntry
-            onEdit={onEdit}
-            onDelete={onDelete}
-          />
-          <RegistrationsAdmissionsTableEntry
-            onEdit={onEdit}
-            onDelete={onDelete}
-          />
-          <RegistrationsAdmissionsTableEntry
-            onEdit={onEdit}
-            onDelete={onDelete}
-          />
-          <RegistrationsAdmissionsTableEntry
-            onEdit={onEdit}
-            onDelete={onDelete}
-          />
-          <RegistrationsAdmissionsTableEntry
-            onEdit={onEdit}
-            onDelete={onDelete}
-          />
-          <RegistrationsAdmissionsTableEntry
-            onEdit={onEdit}
-            onDelete={onDelete}
-          />
-          <RegistrationsAdmissionsTableEntry
-            onEdit={onEdit}
-            onDelete={onDelete}
-          />
-          <RegistrationsAdmissionsTableEntry
-            onEdit={onEdit}
-            onDelete={onDelete}
-          />
-          <RegistrationsAdmissionsTableEntry
-            onEdit={onEdit}
-            onDelete={onDelete}
-          />
-          <RegistrationsAdmissionsTableEntry
-            onEdit={onEdit}
-            onDelete={onDelete}
-          />
-          <RegistrationsAdmissionsTableEntry
-            onEdit={onEdit}
-            onDelete={onDelete}
-          />
-          <RegistrationsAdmissionsTableEntry
-            onEdit={onEdit}
-            onDelete={onDelete}
-          />
-          <RegistrationsAdmissionsTableEntry
-            onEdit={onEdit}
-            onDelete={onDelete}
-          />
-          <RegistrationsAdmissionsTableEntry
-            onEdit={onEdit}
+            onEdit={() => {
+              navigate("/dashboard/admissions/listing/edit");
+            }}
             onDelete={onDelete}
           />
         </div>

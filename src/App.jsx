@@ -38,6 +38,7 @@ import FacultyProfilesPopup from "./components/FacultyProfilesPopup";
 import NoticeBoard from "./screens/NoticeBoard";
 import NoticeBoardPopup from "./components/NoticeBoardPopup";
 import CareersDetails from "./screens/CareersDetails";
+import RegistrationsAdmissionsForm from "./screens/RegistrationsAdmissionsForm";
 
 function Dashboard({ setIsCampusPopup }) {
   return (
@@ -222,6 +223,24 @@ export default function App() {
             path="admissions/listing"
             element={
               <RegistrationsAdmissions onDelete={setIsDeleteConfirmation} />
+            }
+          />
+          <Route
+            path="admissions/listing/add"
+            element={
+              <RegistrationsAdmissionsForm
+                heading="Add"
+                onDelete={setIsDeleteConfirmation}
+              />
+            }
+          />
+          <Route
+            path="admissions/listing/edit"
+            element={
+              <RegistrationsAdmissionsForm
+                heading="Edit"
+                onDelete={setIsDeleteConfirmation}
+              />
             }
           />
           <Route
