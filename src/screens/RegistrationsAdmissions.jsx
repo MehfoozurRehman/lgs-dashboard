@@ -86,23 +86,100 @@ function RegistrationsAdmissionsTableEntry({ onEdit, onView, onDelete }) {
           </svg>
         </button>
       </div>
-      <div className="main__content__table__list__entry">Bilal John</div>
       <div className="main__content__table__list__entry">
-        BilalJohn@gmail.com
+        orem ipsum, dolor sit amet consectetur
       </div>
       <div className="main__content__table__list__entry">
         orem ipsum, dolor sit amet consectetur
       </div>
       <div className="main__content__table__list__entry">
-        <div className="main__content__table__list__entry__message__heading">
-          View
-        </div>
-        <div className="main__content__table__list__entry__message">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, quasi.
-          Minima incidunt, eum accusantium velit beatae mollitia tempore quas
-          officia quisquam odit nesciunt vel a repellat porro suscipit quis
-          ipsa.
-        </div>
+        orem ipsum, dolor sit amet consectetur
+      </div>
+      <div className="main__content__table__list__entry">
+        orem ipsum, dolor sit amet consectetur
+      </div>
+      <div className="main__content__table__list__entry">
+        orem ipsum, dolor sit amet consectetur
+      </div>
+      <div className="main__content__table__list__entry">
+        orem ipsum, dolor sit amet consectetur
+      </div>
+      <div className="main__content__table__list__entry">
+        orem ipsum, dolor sit amet consectetur
+      </div>
+      <div className="main__content__table__list__entry">
+        orem ipsum, dolor sit amet consectetur
+      </div>
+      <div className="main__content__table__list__entry">
+        orem ipsum, dolor sit amet consectetur
+      </div>
+      <div className="main__content__table__list__entry">
+        orem ipsum, dolor sit amet consectetur
+      </div>
+      <div className="main__content__table__list__entry">
+        orem ipsum, dolor sit amet consectetur
+      </div>
+      <div className="main__content__table__list__entry">
+        orem ipsum, dolor sit amet consectetur
+      </div>
+      <div className="main__content__table__list__entry">
+        orem ipsum, dolor sit amet consectetur
+      </div>
+      <div className="main__content__table__list__entry">
+        orem ipsum, dolor sit amet consectetur
+      </div>
+      <div className="main__content__table__list__entry">
+        orem ipsum, dolor sit amet consectetur
+      </div>
+      <div className="main__content__table__list__entry">
+        orem ipsum, dolor sit amet consectetur
+      </div>
+      <div className="main__content__table__list__entry">
+        orem ipsum, dolor sit amet consectetur
+      </div>
+      <div className="main__content__table__list__entry">
+        orem ipsum, dolor sit amet consectetur
+      </div>
+      <div className="main__content__table__list__entry">
+        orem ipsum, dolor sit amet consectetur
+      </div>
+      <div className="main__content__table__list__entry">
+        orem ipsum, dolor sit amet consectetur
+      </div>
+      <div className="main__content__table__list__entry">
+        orem ipsum, dolor sit amet consectetur
+      </div>
+      <div className="main__content__table__list__entry">
+        orem ipsum, dolor sit amet consectetur
+      </div>
+      <div className="main__content__table__list__entry">
+        orem ipsum, dolor sit amet consectetur
+      </div>
+      <div className="main__content__table__list__entry">
+        orem ipsum, dolor sit amet consectetur
+      </div>
+      <div className="main__content__table__list__entry">
+        orem ipsum, dolor sit amet consectetur
+      </div>
+      <div className="main__content__table__list__entry">
+        orem ipsum, dolor sit amet consectetur
+      </div>
+      <div className="main__content__table__list__entry">
+        orem ipsum, dolor sit amet consectetur
+      </div>
+      <div className="main__content__table__list__entry">
+        <img
+          src="https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+          alt=""
+          className="main__content__table__list__entry__img"
+        />
+      </div>
+      <div className="main__content__table__list__entry">
+        <img
+          src="https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+          alt=""
+          className="main__content__table__list__entry__img"
+        />
       </div>
     </div>
   );
@@ -141,10 +218,35 @@ export default function RegistrationsAdmissions({
         <div className="main__content__table">
           <div className="main__content__table__header">
             <TableHeaderEntry title="Action" />
-            <TableHeaderEntry title="Name" />
-            <TableHeaderEntry title="Email" />
-            <TableHeaderEntry title="Subject" />
-            <TableHeaderEntry title="Message" />
+            <TableHeaderEntry title="Name Of Branch" />
+            <TableHeaderEntry title="Child's Full Name" />
+            <TableHeaderEntry title="Exact Date Of Birth" />
+            <TableHeaderEntry title="Gender" />
+            <TableHeaderEntry title="Place Of Birth" />
+            <TableHeaderEntry title="Father's Name And Address" />
+            <TableHeaderEntry title="Father's Profession / Occupation" />
+            <TableHeaderEntry title="Father's Tel" />
+            <TableHeaderEntry title="Father's Tel Off" />
+            <TableHeaderEntry title="Father's Mob" />
+            <TableHeaderEntry title="Father's CNIC" />
+            <TableHeaderEntry title="Mother's Name And Address" />
+            <TableHeaderEntry title="Mother's Profession / Occupation" />
+            <TableHeaderEntry title="Mother's Tel" />
+            <TableHeaderEntry title="Mother's Tel Off" />
+            <TableHeaderEntry title="Mother's Mob" />
+            <TableHeaderEntry title="Mother's CNIC" />
+            <TableHeaderEntry title="Guardian's Name And Address" />
+            <TableHeaderEntry title="Guardian's Profession / Occupation" />
+            <TableHeaderEntry title="Guardian's Tel" />
+            <TableHeaderEntry title="Guardian's Tel Off" />
+            <TableHeaderEntry title="Guardian's Mob" />
+            <TableHeaderEntry title="Nationality Of Parents" />
+            <TableHeaderEntry title="Name Of Previous Nursery / School" />
+            <TableHeaderEntry title="Class Previously Studying In And Date Of Promotion" />
+            <TableHeaderEntry title="Brother/Sister Studying In Any LGS Branch" />
+            <TableHeaderEntry title="Class Of Brother/Sister Studying In Any LGS Branch" />
+            <TableHeaderEntry title="Upload Birth Certificate" />
+            <TableHeaderEntry title="Upload Leaving Certificate" />
           </div>
           <RegistrationsAdmissionsTableEntry
             onEdit={() => {
