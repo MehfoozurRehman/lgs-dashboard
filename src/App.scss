@@ -1930,6 +1930,345 @@ iframe {
   color: white;
   border-color: #005dff;
 }
+.challan {
+  min-width: 1300px !important;
+  height: fit-content;
+  min-height: 100vh;
+  margin-top: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.challan__container {
+  width: 1360px;
+  height: 1300px;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+.challan__component {
+  width: 32%;
+  padding: 1em 0.5em;
+}
+.challan__component__header__logo {
+  width: 55px;
+  height: 60px;
+  margin-right: 1em;
+}
+.challan__component__header {
+  width: 100%;
+  display: flex;
+}
+.challan__component__header__content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.challan__heading {
+  font-size: 14px;
+  color: #000;
+  font-weight: 600;
+}
+.challan__para {
+  font-size: 13px;
+  color: #000;
+  margin-top: 0.5em;
+}
+
+.challan__para span {
+  font-weight: 600;
+}
+.challan__para__list {
+  margin-top: 0.7em;
+}
+ol {
+  padding-left: 1.5em !important;
+}
+li {
+  margin-top: 0.7em;
+}
+.challan__sub__heading {
+  font-size: 12px;
+  color: #000;
+  font-weight: 600;
+  margin-top: 0.2em;
+}
+.challan__component__row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.3em;
+}
+.challan__component__row__entry__left {
+  font-size: 12px;
+  color: #000;
+  font-weight: 600;
+  width: 63%;
+  display: flex;
+}
+.challan__component__row__entry__left span {
+  font-weight: normal;
+  margin-left: 0.4em;
+}
+.challan__component__row__entry__right {
+  font-size: 12px;
+  color: #000;
+  font-weight: 600;
+  width: 42%;
+  display: flex;
+}
+.challan__component__row__entry__right span {
+  font-weight: normal;
+  margin-left: 0.4em;
+}
+table.challan__table {
+  width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-width: 1px;
+  border-color: #000000;
+  border-style: solid;
+  color: #000000;
+  margin-top: 1em;
+  text-align: center;
+  font-size: 13px;
+}
+
+table.challan__table td,
+table.challan__table th {
+  border-width: 1px;
+  border-color: #000000;
+  border-style: solid;
+  padding: 4px;
+}
+
+table.challan__table thead {
+  background-color: transparent;
+}
+.challan__component__sub__total {
+  width: 100%;
+  font-size: 13px;
+  color: #000;
+  font-weight: 600;
+  margin: 0.7em 0em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.challan__component__sub__total span {
+  font-weight: normal;
+}
+.challan__component__sub__total__line {
+  height: 1px;
+  background: #000;
+  width: 100%;
+}
+.challan__form__wrapper {
+  width: 100%;
+  height: fit-content;
+  min-height: 100vh;
+  padding: 4em 0em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.challan__form__btn__wrapper {
+  display: flex;
+  align-items: center;
+}
+.registration__form {
+  width: 100%;
+  height: fit-content;
+  padding: 2em;
+}
+.registration__form__header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.registration__form__header__content__heading {
+  font-size: 22px;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0.2em 0em;
+}
+.registration__form__header__content__sub__heading {
+  font-size: 18px;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.registration__form__header__img {
+  margin-right: 1.5em;
+  width: 60px;
+}
+.registration__form__header__content {
+  text-align: center;
+}
+.registration__form__table {
+  width: 100%;
+  border: 1px solid #000;
+  margin-top: 1em;
+  padding: 0;
+}
+.registration__form__name {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 2em;
+}
+.registration__form__name span {
+  font-weight: normal;
+  margin-left: 0.5em;
+  position: relative;
+}
+.registration__form__name span::after {
+  position: absolute;
+  content: "";
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #000;
+}
+.registration__form__table__entry {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0.7em;
+  position: relative;
+  font-size: 14px;
+  color: #000;
+  font-weight: 600;
+}
+.registration__form__table__entry span {
+  font-weight: normal;
+  margin-left: 0.5em;
+}
+.registration__form__table__entry__secondary__entry {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  min-width: 250px;
+  font-size: 14px;
+  color: #000;
+  font-weight: 600;
+  margin-left: 3em;
+}
+.registration__form__table__entry__secondary__entry span {
+  font-weight: normal;
+  margin-left: 0.5em;
+}
+.registration__form__table__entry::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #000;
+}
+.registration__form__table__entry:last-child::after {
+  display: none;
+}
+.registration__form__table__entry__secondary {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-left: 6em;
+}
+.registration__form__table__entry__secondary::before {
+  position: absolute;
+  left: -20px;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background: #000;
+  content: "";
+}
+.registration__form__date__table {
+  padding: 0.5em;
+  border: 1px solid #000;
+}
+.registration__form__middle__content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 1em;
+}
+.registration__form__signature__table {
+  width: 300px;
+  height: 120px;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.registration__form__signature__table__content {
+  font-size: 14px;
+  color: #000;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+.registration__form__footer {
+  width: 100%;
+  padding: 1em;
+  border: 1px solid #000;
+  margin-top: 1em;
+}
+.registration__form__footer__entry {
+  font-size: 14px;
+  color: #000;
+  position: relative;
+  margin-left: 2em;
+  margin-top: 0.4em;
+}
+.registration__form__footer__entry::after {
+  position: absolute;
+  content: "";
+  left: -20px;
+  top: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background: #000;
+}
+.registration__form__undertaking__heading {
+  font-size: 22px;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 0.5em;
+}
+.registration__form__undertaking__para {
+  font-size: 14px;
+  color: #000;
+  margin-top: 0.2em;
+  margin-bottom: 3em;
+}
+.section__btn__primary {
+  padding: 0.8em 1.5em;
+  border-radius: 30px;
+  background: #005dff;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  margin-right: 1em;
+}
+.section__btn__primary:hover {
+  background: #003185;
+  transition: 300ms ease-in-out;
+}
 @media (max-width: 1440px) {
   .dashboard__panel__content__stats__icon {
     padding: 0.7em 1em;

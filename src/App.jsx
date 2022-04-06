@@ -39,6 +39,7 @@ import NoticeBoard from "./screens/NoticeBoard";
 import NoticeBoardPopup from "./components/NoticeBoardPopup";
 import CareersDetails from "./screens/CareersDetails";
 import RegistrationsAdmissionsForm from "./screens/RegistrationsAdmissionsForm";
+import PDFForms from "./screens/PDFForms";
 
 function Dashboard({ setIsCampusPopup }) {
   return (
@@ -181,6 +182,7 @@ export default function App() {
         <Route path="/change_password" element={<ChangePassword />} />
         <Route path="/forgot_password" element={<ForgotPassword />} />
         <Route path="/otp_email" element={<OtpEmail />} />
+        <Route path="/pdf" element={<PDFForms />} />
 
         <Route
           path="/dashboard"
